@@ -1,7 +1,10 @@
-<?php $mode = filter_input(INPUT_GET, "mode") == 'sr' ? 'srmode' : 'slidemode'; ?><!DOCTYPE html>
+<?php
+include_once('inc_theme.php');
+$mode = filter_input(INPUT_GET, "mode") == 'sr' ? 'srmode' : 'slidemode';
+$theme = get_slide_theme();
+?><!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta name="copyright" content="&#169; 2024 jidaikobo Inc." />
 <?php if ($mode == 'slidemode'):?>
 	<script src="./js/jquery.js" type="text/javascript"></script>
 	<script src="./js/slidy.js" type="text/javascript"></script>
@@ -13,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" media="screen, projection, print" href="./css/layout.css" />
 	<title>発注者のためのウェブアクセシビリティ基礎</title>
 </head>
-<body class="<?php echo $mode ?>">
+<body class="<?php echo $mode . ' theme-' . $theme ?>">
 
 <!-- slide -->
 <div class="slide titlepage">
@@ -24,13 +27,13 @@
 <ul>
 	<li>キーボードの左右キーでスライドを操作できます</li>
 </ul>
-<p><a style="color:#fff !important;" href="./for-orders.php?mode=sr">（スクリーンリーダ用に切り替え）</a></p>
+<p><a style="color:#fff !important;" href="<?php echo build_slide_url('./for-orders.php', 'sr', $theme); ?>">（スクリーンリーダ用に切り替え）</a></p>
 <?php else: ?>
 <h2 style="margin: 0;">スクリーンリーダ用について</h2>
 <ul>
 	<li>スライドの仕様上、h1（見出し1）が多い構造になっています。</li>
 </ul>
-<p><a style="color:#fff !important;" href="./for-orders.php">（スライド用に切り替え）</a></p>
+<p><a style="color:#fff !important;" href="<?php echo build_slide_url('./for-orders.php', null, $theme); ?>">（スライド用に切り替え）</a></p>
 <?php endif; ?>
 </small>
 </div>

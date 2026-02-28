@@ -7,8 +7,17 @@ div.titlepage {
 	background-position: 98% 95%;
 }
 
+body.theme-generic div.titlepage {
+	background-color: #005a9c;
+	background-image: none;
+}
+
 div.titlepage.slide {
 	background-color: #231815;
+}
+
+body.theme-generic div.titlepage.slide {
+	background-color: #005a9c;
 }
 
 div.titlepage h1{
@@ -65,6 +74,10 @@ div.toolbar{
 	color: #fff;
 }
 
+body.theme-generic div.toolbar{
+	background-color: #005a9c;
+}
+
 div.toolbar *{
 	color: #fff !important;
 }
@@ -83,6 +96,11 @@ div.slide h1 {
 
 	font-size: 110%;
 	color: #fff;
+}
+
+body.theme-generic div.slide h1 {
+	background-color: #005a9c;
+	background-image: none;
 }
 
 body.slidemode div.slide h1 {
