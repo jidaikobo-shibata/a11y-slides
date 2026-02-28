@@ -1,0 +1,107 @@
+/* http: //jigsaw.w3.org/css-validator/ */
+
+/* general class */
+
+th.ctrl,
+td.ctrl,
+th.id_row,
+td.id_row{
+	white-space: nowrap;
+	text-align: center !important;
+	width: 1%;
+}
+
+th.ctrl2{
+	white-space: nowrap;
+	text-align: center !important;
+}
+
+td.cost,
+td.title,
+td.head {
+	white-space: nowrap;
+}
+td.cost {
+	text-align: right !important;
+}
+th.title,
+td.title {
+	text-align: center !important;
+}
+
+/* tbl */
+
+table.tbl {
+	margin: 5px 0 10px !important;
+	width: 98%;
+	border-collapse: collapse;
+	border-top: 1px #bbb solid;
+	border-left: 1px #bbb solid;
+}
+*>table.tbl {
+	width: 100%;
+}
+table.tbl th,
+table.tbl td {
+	text-align: left;
+	padding: 4px 5px;
+	border-bottom: 1px #bbb solid;
+	border-right: 1px #bbb solid;
+}
+*>table.tbl th,
+*>table.tbl td {
+	padding: 2px 5px;
+}
+table.tbl th {
+	text-align: left;
+	background-color: #f8f8f8;
+	white-space: nowrap;
+	font-weight: bold;
+	color: #111;
+}
+table.tbl thead th {
+	background-color: #ddd;
+	color: #111;
+}
+table.tbl td.btn {
+	padding: 10px;
+	text-align: center;
+}
+table.tbl * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+table.tbl ul,
+table.tbl ol {
+	padding: 0;
+	margin-left: 25px;
+	margin-right: 0;
+}
+
+/* tbl1 */
+
+table.tbl1 {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px #bbb solid;
+	border-left: none;
+}
+table.tbl1 th,
+table.tbl1 td {
+	text-align: left;
+	padding: 5px;
+	border-bottom: 1px #bbb solid;
+	border-right: none;
+}
+table.tbl1 thead th {
+	color: #111;
+	background-color: #ded9d1;
+}
+table.tbl1 th {
+	color: #111;
+	background-color: #eee;
+}
+table.tbl1 td {
+	color: #111;
+	background-color: #fff;
+}
