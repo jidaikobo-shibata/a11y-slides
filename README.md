@@ -20,15 +20,10 @@ php -v
 ./scripts/start.sh
 ```
 
-デフォルトの URL:
+スライドの URL:
 
 - `http://127.0.0.1:8000/index.php`
 - `http://127.0.0.1:8000/index.php?mode=sr`
-
-時代工房用のテーマで確認する場合:
-
-- `http://127.0.0.1:8000/index.php?theme=jidaikobo`
-- `http://127.0.0.1:8000/index.php?mode=sr&theme=jidaikobo`
 
 ポートを変更する場合:
 
@@ -47,7 +42,6 @@ PORT=8080 ./scripts/start.sh
 ## 補足
 
 - デフォルトテーマは `generic` です
-- `theme=jidaikobo` を付けると時代工房向けの見た目に切り替わります
 - ログは `scripts/.php-server.log` に出力されます
 - PID は `scripts/.php-server.pid` に保存されます
 - これらのファイルは `.gitignore` で除外されています
@@ -59,7 +53,6 @@ PORT=8080 ./scripts/start.sh
 - `for-editors.php`: 更新担当者向けスライド
 - `for-orders.php`: 発注者向けスライド
 - `policy.php`: ウェブアクセシビリティ方針の立て方
-- `person.php`: 講師について
 
 ## ディレクトリ構成
 
