@@ -246,22 +246,38 @@ d) 具体的な対応方法の紹介</p></blockquote>
 <div class="slide">
 <h1>全盲視覚障害者がスクリーンリーダを利用する様子</h1>
 <iframe style="width:1000px;min-height:600px;display:block;margin:20px auto 0;" src="https://www.youtube.com/embed/RLIKacI05fE?si=P_p4O4Kjgg3Z2F8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p style="text-align:center">YouTube 総務省動画チャンネル（@soumuchannel）より</p>
+<p style="text-align:center">YouTube 総務省動画チャンネル（<a href="https://www.youtube.com/@soumuchannel">@soumuchannel</a>）より</p>
 </div>
 
 <!-- slide -->
 <div class="slide">
 <h1>ロービジョンの利用者がPCを利用する様子</h1>
 <iframe style="width:1000px;min-height:600px;display:block;margin:20px auto 0;" src="https://www.youtube.com/embed/p80PJXMPIDY?si=P_p4O4Kjgg3Z2F8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p style="text-align:center">YouTube 総務省動画チャンネル（@soumuchannel）より</p>
+<p style="text-align:center">YouTube 総務省動画チャンネル（<a href="https://www.youtube.com/@soumuchannel">@soumuchannel</a>）より</p>
 </div>
 
 <!-- slide -->
 <div class="slide">
 <h1>肢体不自由の利用者がPCを利用する様子</h1>
-<video src="./movies/soumu-upper-limb-disorder.mp4" controls style="width:800px;min-height:600px;display:block;margin:20px auto 0;"></video>
-<p style="text-align:center">総務省「障害者のウェブページ利用方法の紹介ビデオ」より</p>
-<!-- <p style="text-align:center;font-size:80%;"><a href="https://www.youtube.com/watch?v=HXYklmUOz6A&t=150s">スマートフォン利用のサンプル（YouTubeチャンネル四肢麻痺車椅子野郎ムネ氏より）</a></p> -->
+<iframe style="width:1000px;min-height:600px;display:block;margin:20px auto 0;" src="https://www.youtube.com/embed/dqc8JpMatt4?si=ns63UIdtiXudxnG1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p style="text-align:center">YouTube 総務省動画チャンネル（<a href="https://www.youtube.com/@soumuchannel">@soumuchannel</a>）より</p>
+</div>
+
+<!-- slide -->
+<div class="slide">
+<h1>その他の動画（参考）</h1>
+
+<h2>YouTube 総務省動画チャンネル（<a href="https://www.youtube.com/@soumuchannel">@soumuchannel</a>）より</h2>
+<ul>
+	<li><a href="https://www.youtube.com/watch?v=2AiWGXz4h6s">「私はこう使ってます」多用なウェブ利用方法～脳性麻痺の方（人差し指で操作）のウェブページ利用紹介</a></li>
+	<li><a href="https://www.youtube.com/watch?v=JuJruOSgv6o">「私はこう使ってます」多用なウェブ利用方法～ディスレクシアの方（読み書きが困難な学習障害）のウェブページ利用紹介</a></li>
+</ul>
+
+<h2>YouTube デジタル庁ニュース（<a href="https://www.youtube.com/@digital-agency-news">@digital-agency-news</a>）</h2>
+<ul>
+	<li><a href="https://www.youtube.com/watch?v=aMLxuko8L3M">障害当事者と共に挑む デジタル庁のアクセシビリティとは</a></li>
+</ul>
+
 </div>
 
 <!-- slide -->
@@ -640,9 +656,10 @@ d) 具体的な対応方法の紹介</p></blockquote>
 <!-- slide -->
 <div class="slide">
 <h1>分岐</h1>
+
 <ul>
-	<li><a href="./for-editors.php">更新担当者のためのウェブアクセシビリティ基礎</a></li>
-	<li><a href="./for-orders.php">発注担当者のためのウェブアクセシビリティ基礎</a></li>
+	<li><a href="<?php echo build_slide_url('./for-editors.php', $mode === 'srmode' ? 'sr' : null, $theme); ?>">更新担当者のためのウェブアクセシビリティ基礎</a></li>
+	<li><a href="<?php echo build_slide_url('./for-orders.php', $mode === 'srmode' ? 'sr' : null, $theme); ?>">発注担当者のためのウェブアクセシビリティ基礎</a></li>
 </ul>
 </div>
 
